@@ -1,112 +1,126 @@
 body{
-    background-image: linear-gradient(to bottom, #03274d, #66a2fe);
-}
-
-.login-main{
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; /* Added to center vertically */
-    width: 100%; /* Make the container full width */
-    height: 98vh; /* Make the container full height */
-    text-align: center;   
+    align-items: center;
 }
 
-.section-login{
-    background-color: white;
-    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 15px solid #073082 ;
-    border-radius: 10px;
-    width: 360px;
-    padding: 66px
-}
-
-.title2{
-    font-size: 24px;
-    font-family: Roboto;
-    padding: 12px;
-}
-
-.button{
-    padding: 12px;
-}
-
-.button-login{
-    padding: 8px 10px;
-    width: 80%;
-    background-color: #073082;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: Roboto;
-}
-
-.input{
-    padding: 5px;
-}
-
-.esqueceu-senha{
-    color: #073082;
-    text-decoration: none;
-    font-family: Roboto;
-}
-
-.esqueceu-senha2{
-    color: #073082;
-    text-decoration:none;
-    font-family: Roboto;
-}
-
-.esqueceu-senha3{
-    color: #073082;
-    text-decoration: none;
-    font-style: italic;
-    font-family: Roboto;
-}
-
-.esqueceu-senha3:hover{
-    color:#8092b6
-}
-
-.esqueceu-senha:hover{
-    color:#8092b6
-}
-
-.input{
-    margin: 10px;
-}
-
-input {
-    width: 250px; /* Ajuste a largura conforme necessário */
-    height: 40px;
-    border: 1px solid #a1a1a1; /* Borda cinza clara */
-    border-radius: 25px;
-    width: 84%;
-    padding: 24px 10px;
-    text-align: left;
-    font-size: 16px;
+form {
+    width: 480px;
     background-color: #fff;
-    box-sizing: border-box;
+    padding: 30px 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-input:focus {
-    border-color: #007bff; /* Cor da borda ao focar */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+form h1{
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    font-size: 32px
+}
+
+form .coluna{
+    position: relative;
+    margin: 20px;
+}
+
+form input{
+    width: 100%;
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form input[type="email"], form input[type='password']{
+    padding-right: 112px;
+    font-size: 18px;
+}
+
+form input[type="email"]:focus, form input[type='password']:focus{
+    border-color: #073082;
+    outline: none;
 }
 
 
-
-
-button:hover{
-    transition:ease-in-out;
-    transition-duration: 0.5s;
-    background-color: #8092b6;
+form input[type="button"]{
+    background-color: #073082;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
 }
 
-
-.welcome{
-    font-family: Ribeye;
-    font-size: 32px;
+form input[type="button"]:hover{
+    background-color: #7498e0;
+    transition: all 0.6s ease-in-out    ;
 }
+
+form .coluna span
+{
+    position: absolute;
+    top: 35%;
+    right: 5px;
+    transform: translate(-30%);
+    color: #969696
+}
+
+form .coluna img{
+    padding-bottom: 8px;
+    padding-right: 10px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 30%;
+    right: 5px;
+    transform: translate(-30%);
+    color: #969696
+}
+
+form .coluna img{
+    cursor: pointer;
+}
+
+form .esqueceu{
+    margin: 20px;
+    text-align: center;
+}
+
+form .button{
+    margin: 20px
+}
+
+/*SnackBar de confirmação*/
+
+.snackbar {
+    visibility: hidden; /* Inicialmente oculto */
+    min-width: 250px; /* Largura mínima */
+    margin-left: -125px; /* Centraliza horizontalmente */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed; /* Posiciona fixo na tela */
+    z-index: 1; /* Garante que fique acima de outros elementos */
+    left: 50%; /* Centraliza horizontalmente */
+    bottom: 30px; /* Posiciona na parte inferior da tela */
+  }
+.show {
+    visibility: visible; /* Torna visível */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animações */
+@keyframes fadein {
+    from {top: -30px; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+  }
+  
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: -30px; opacity: 0;}
+  }
