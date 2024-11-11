@@ -1,0 +1,104 @@
+           /* Estilos gerais da página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #003580;
+        }
+
+        h1{
+            text-align: center;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+            font-size: 32px;
+            padding-right: 5px;
+        }
+
+        /* Container do formulário */
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .retorno{
+            display: flex;
+            gap: 0.1px;
+        }
+        
+        .btn-back{
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent; /* Botão transparente */
+            color: #333; /* Cor da fonte */
+            cursor: pointer; 
+        }
+        
+        .back{
+            padding-bottom: 15px;
+            padding-right: 20px;
+            width: 70px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        /* Título do formulário */
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 2em;
+        }
+
+        /* Estilo dos campos de entrada */
+        input{
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 1em;
+        }
+
+        input:focus{
+            border-color: #002366;
+            outline: none;
+        }
+
+        .aviso{
+            text-align:left ;
+            padding: 18px;
+        }
+
+        /* Container dos botões */
+        .buttons {
+            margin-top: 20px;
+        }
+
+        /* Estilo dos botões */
+        .buttons button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            background-color: #003580;
+        }
+
+        /* Efeito hover nos botões */
+        .buttons button:hover {
+            background-color: #7498e0;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .buttons a{
+            text-decoration: none;
+            color: white;
+        }
