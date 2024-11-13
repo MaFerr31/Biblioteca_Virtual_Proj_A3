@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/sideBar.css">
-    <link rel="stylesheet" href="../styles/shopCart.css">
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,13 +70,113 @@
             </div>
         </div>
     </div>
+    <div class="payment">Pagamento</div>
+<section>
+    <div class="container">
+        <div class="form-section">
+            <h2>Informações para o pagamento</h2>
 
-    <main>
-        <div class="shopping">
-            Seu Carrinho
+            <!-- Informações Pessoais -->
+            <div class="form-group">
+                <input class="payment-input" type="text" placeholder="Nome Completo" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="E-mail" required>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="CPF" required>
+                </div>
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Telefone" required>
+                </div>
+            </div>
+
+            <!-- Tipo de Entrega -->
+            <div class="checkbox-group">
+                <label><input type="checkbox"> À Domicílio (frete incluso)</label>
+                <label><input type="checkbox" checked> Retirar no local</label>
+            </div>
+
+            <!-- Endereço -->
+            <h2>Informações do Endereço</h2>
+            <div class="row">
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="CEP" required>
+                </div>
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Endereço" required>
+                </div>
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Número" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Complemento">
+                </div>
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Cidade" required>
+                </div>
+            </div>
+
+            <!-- Método de Pagamento -->
+            <h2>Método de Pagamento</h2>
+            <div class="row">
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Número do Cartão" required>
+                </div>
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Expiração MM/AA" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="Nome no Cartão" required>
+                </div>
+                <div class="form-group">
+                    <input class="payment-input" type="text" placeholder="CVC" required>
+                </div>
+            </div>
+
+            <div class="payment-icons">
+                <img src="../static/icon-bandeiras.png" alt="Visa">
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-cancel">Cancelar</button>
+                <button class="btn btn-finish">Finalizar</button>
+            </div>
         </div>
-    </main>
-
+        <div class="summary-section">
+            <h3>Total do Aluguel</h3>
+            <div class="summary-item">
+                <span>Item 1</span>
+                <span>R$ 50,00</span>
+            </div>
+            <div class="summary-item">
+                <span>Item 2</span>
+                <span>R$ 30,00</span>
+            </div>
+            <div class="summary-item">
+                <span>Item 3</span>
+                <span>R$ 20,00</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span>R$ 100,00</span>
+            </div>
+            <div class="summary-prazo">
+                <h2>Políticas do Serviço</h2>
+                <span>O prazo para devolução do item é de <b>7 dias úteis</b>.</span>
+                <p class="multa">Em caso de atraso será cobrado uma multa de 3% do valor do aluguel do produto.</p>
+                <p class="ajuda">Em caso de dúvida, entre em contato com bibliotecavirtual@contato.com</p>
+            </div>
+        </div>
+        <!--<div class="image-section"></div>-->
+    </div>
     
+</section>
+
 </body>
 </html>
