@@ -15,3 +15,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install Dependences
+        run: |
+          npm install -g htmlhint css|inte jest pupperteer
+
+      - name: List html
+        run: |
+          html ../../frontend/cadastro.html
