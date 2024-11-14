@@ -23,7 +23,7 @@ jobs:
       
       - name: Install Dependences
         run: |
-          npm install -g htmlhint css|inte jest pupperteer
+          npm install -g htmlhint csslint eslint jest puppeteer
 
       - name: List html
         run: |
