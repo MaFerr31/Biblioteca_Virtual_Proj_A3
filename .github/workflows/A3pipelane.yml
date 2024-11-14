@@ -26,9 +26,7 @@ jobs:
           npm install -g htmlhint csslint eslint jest puppeteer
 
       - name: List HTML file
-        run: |
-          htmlhint ../../frontend/login.html
+        run: htmlhint ../../frontend/login.html
 
       - name: List CSS
-        run: |
-          csslint ../../frontend/login.css
+        run: csslint ../../frontend/login.css
