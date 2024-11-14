@@ -27,7 +27,3 @@ jobs:
 
       - name: List HTML file
         run: htmlhint ../../frontend/cadastro.html
-
-      - name: Open HTML file in browser
-        run: |
-          npx puppeteer:launch --headless --args="--disable-gpu --no-sandbox" --url http://localhost:8080/frontend/cadastro.html
