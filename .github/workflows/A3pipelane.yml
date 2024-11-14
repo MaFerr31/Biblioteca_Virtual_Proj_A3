@@ -1,4 +1,4 @@
-name: A3 Pipalane
+name: A3 Pipelane
 
 on:
   push:
@@ -25,6 +25,9 @@ jobs:
         run: |
           npm install -g htmlhint csslint eslint jest puppeteer
 
-      - name: List html
+      - name: List HTML file
+        run: htmlhint ../../frontend/cadastro.html
+
+      - name: Open HTML file in browser
         run: |
-          html ../../frontend/cadastro.html
+          npx puppeteer:launch --headless --args="--disable-gpu --no-sandbox" --url http://localhost:8080/frontend/cadastro.html
