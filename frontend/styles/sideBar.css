@@ -105,11 +105,7 @@ body{
     /* line-height: 43.72px;  */
     text-align: left; 
     width: 100%; 
-<<<<<<< HEAD
     height: 80px;
-=======
-    height: 60px;
->>>>>>> main
     left: 629px; 
     opacity: 1; 
     color:black;
@@ -131,10 +127,6 @@ body{
     justify-content: center;
     align-items: center;
     margin:auto;
-<<<<<<< HEAD
-=======
-    margin-left: 810px;
->>>>>>> main
     gap: 10px
 }
 
@@ -206,11 +198,7 @@ body{
 
 .menu-btn .background{
     background-color: #073082;
-<<<<<<< HEAD
     padding: 26px;
-=======
-    padding: 18px;
->>>>>>> main
     margin: 0;
 }
 
