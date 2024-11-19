@@ -29,4 +29,7 @@ jobs:
         run: htmlhint ./frontend/pages/*.html
 
       - name: List CSS
-        run: csslint ./frontend/styles/cadastro.css
+        run: |
+            csslint ./frontend/styles/cadastro.css
+            csslint ./frontend/styles/esqueceu.css
+            csslint ./frontend/styles/filmes.css
