@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/sideBar.css">
+    <link rel="stylesheet" href="../styles/filmes.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
-    <script src="../scripts/script.js"></script>
     <title>Biblioteca Virtual</title>
 </head>
 <body>
@@ -37,7 +35,7 @@
             </div>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Pesquise pelos produtos">
+            <input type="text" id ="search" placeholder="Pesquise pelos produtos">
             <button class="search-btn">
                 <i class="fas fa-search"></i>
             </button>
@@ -51,13 +49,8 @@
                 <div class="item">
                     <a class="sub-button"><i class="fas fa-box"></i>Produtos <i class="fas fa-angle-right dropdown"></i></a>
                     <div class="sub-menu">
-<<<<<<< HEAD
-                        <a href="#" class="sub-item"><i class="fas fa-book"></i>Livros</a>
-                        <a href="#" class="sub-item"><i class="fas fa-film"></i>Filmes</a>
-=======
                         <a href="livros.html" class="sub-item"><i class="fas fa-book"></i>Livros</a>
                         <a href="filmes.html" class="sub-item"><i class="fas fa-film"></i>Filmes</a>
->>>>>>> main
                         <a href="#" class="sub-item"><i class="fas fa-music"></i>Discos</a>
                     </div>
                 </div>
@@ -72,6 +65,71 @@
                 </div>
             </div>
         </div>
-    
+        <div class="banner">
+            <img src="../static/img/1440 livros.jpg" alt="Livros na biblioteca">
+        </div>
+        <header>
+        
+        <div class="content">
+            <div class="subtitle"><i class="fa-solid fa-book"></i><h2>Categoria: Sessão Livros</h2></div>
+            </div>
+        
+            <div class="products">
+                <div class="product">
+                    <img src="../static/img/toy.jpg" alt="Toy Story 4">
+                    <div class = "product-info">
+                    <h3>Toy Story 4</h3>
+                    <p>Capa dura</p>
+                    <p>R$13,42</p>
+                </div>
+                    <button>ALUGAR <span>+</span></button>
+                </div>
+        
+                <div class="product">
+                    <img src="../static/img/rei.jfif" alt="O Rei Dos Dividendos">
+                    <div class = "product-info">
+                    <h3>O Rei Dos Dividendos</h3>
+                    <p>Capa dura</p>
+                    <p>R$42,00</p>
+                    </div>
+                    <button>ALUGAR <span>+</span></button>
+                </div>
+        
+                <div class="product">
+                    <img src="../static/img/cachorro.png" alt="Paw Patrol: Missão Resgate">
+                    <div class = "product-info">
+                    <h3>Paw Patrol: Missão Resgate</h3>
+                    <p>Capa dura</p>
+                    <p>R$19,99</p>
+                    </div>
+                    <button>ALUGAR <span>+</span></button>
+                </div>
+        
+                <div class="product">
+                    <img src="../static/img/leis.jfif" alt="As 48 Leis Do Poder">
+                    <div class = "product-info">
+                    <h3>As 48 Leis Do Poder</h3>
+                    <p>Capa comum</p>
+                    <p>R$7,96</p>
+                    </div>
+                    <button>ALUGAR <span>+</span></button>
+                </div>
+        
+                <div class="product">
+                    <img src="../static/img/principe.jpg" alt="O Pequeno Príncipe">
+                    <div class = "product-info">
+                    <h3>O Pequeno Príncipe</h3>
+                    <p>Capa dura</p>
+                    <p>R$9,99</p>
+                    </div>
+                    <button>ALUGAR <span>+</span></button>
+                </div>
+                </div>
+                <div id="no_results">
+                    <p>Nenhum resultado encontrado</p>
+            </div>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 body{
     background-color: #f6f6f6;
     font-family: Roboto;
 }
 
+=======
+>>>>>>> main
 .shopping{
     font-family: Poppins;
     font-size: 28px;
@@ -10,8 +13,11 @@ body{
     margin-top: 50px;
     background-color: #073082;
     color: white
+<<<<<<< HEAD
 }
 
 .content{
     display: flex;
+=======
+>>>>>>> main
 }

@@ -38,12 +38,15 @@ form input[type="email"], form input[type='password']{
     font-size: 18px;
 }
 
+<<<<<<< HEAD
 form input[type="text"]{
     padding-right: 112px;
     font-size: 18px;
 }
 
 
+=======
+>>>>>>> main
 form input[type="email"]:focus, form input[type='password']:focus{
     border-color: #073082;
     outline: none;

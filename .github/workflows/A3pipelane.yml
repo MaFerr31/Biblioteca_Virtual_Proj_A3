@@ -1,0 +1,36 @@
+name: A3 Pipelane
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install Dependences
+        run: |
+          npm install -g htmlhint csslint eslint jest puppeteer
+
+      - name: List HTML file
+        run: htmlhint ./frontend/pages/*.html
+
+      - name: List CSS
+        run: |
+            csslint ./frontend/styles/cadastro.css
+            csslint ./frontend/styles/esqueceu.css
+            csslint ./frontend/styles/login.css
+            
