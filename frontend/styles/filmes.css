@@ -1,120 +1,122 @@
-body {
-  background-color: whitesmoke;
-  margin: 0;
-  min-height: 100vh;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ribeye&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .banner {
-  align-items: center;
-  display: flex;
-  height: 300px;
-  justify-content: center;
-  overflow: hidden;
   width: 100%;
+  height: 300px; /* Altura do banner */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner img {
-  height: 100%;
-  margin-top: 55px;
-  object-fit: cover;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 55px;
 }
 
 header {
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
 
 .content {
+  margin-bottom: 10px;
   display: flex;
   margin-bottom: 20px;
   width: 100%;
+
 }
 
 .subtitle {
-  align-items: center;
   display: flex;
-  font-size: var(--font-large);
+  font-size: 24px;
   margin-left: 20px;
+  align-items: center;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: var(--font-large);
-  padding-left: 10px;
+  font-size: 25px;
   text-align: 50px;
+  padding-left: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .products {
   display: grid;
-  gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   justify-content: space-around;
+  gap: 30px;
   padding: 20px;
 }
 
 .product {
-  align-items: center;
-  border: 1px solid #073082;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
+  border: 1px solid #073082;
 }
 
 .product img {
-  border-radius: 5px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
-  width: 100%;
+  border-radius: 5px;
 }
 
 .product-info {
-  align-items: center;
+  min-height: auto; /* Ajuste conforme necessário */
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .product-info h3 {
-  align-items: center;
+  font-size: 17px;
   color: #333;
+  height: 50px; 
   display: flex;
-  font-size: var(--font-medium);
-  height: 50px;
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .product-info p:nth-child(2) {
-  align-items: center;
+  font-size: 14px;
   color: #666;
+  height: 20px; /* Altura fixa para alinhar o tipo do produto (ex: Blu-ray) */
   display: flex;
-  font-size: var(--font-small);
-  height: 20px;
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .product-info p:nth-child(3) {
-  align-items: center;
+  font-size: 14px;
   color: #666;
+  height: 30px; /* Altura fixa para alinhar o preço */
   display: flex;
-  font-size: var(--font-small);
-  height: 30px;
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .product button {
   background-color: #073082;
+  color: white;
+  padding: 10px 15px;
   border: none;
   border-radius: 10px;
-  color: white;
   cursor: pointer;
-  height: 50px;
-  padding: 10px 15px;
   width: 100%;
+  height: 50px;
 }
 
 .product button:hover {
@@ -122,30 +124,38 @@ h2 {
 }
 
 .product button span {
-  font-size: var(--font-medium);
+  font-size: 18px;
   margin-left: 5px;
 }
 
 #no_results {
-  color: #666;
-  display: none;
-  font-size: var(--font-medium);
-  left: 50%;
-  position: absolute;
-  top: 60%;
-  transform: translate(-50%, -50%);
+  display: none; 
+  position: absolute; /* Posicionamento absoluto para centralização */
+  top: 60%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para o centro exato */
+  font-size: 18px; /* Ajuste o tamanho do texto, se necessário */
+  color: #666; /* Cor do texto */
+}
+
+/*mari*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: whitesmoke;
 }
 
 .side-bar {
   background: #073082;
+  width: 300px;
   height: 100vh;
-  left: -100%;
-  overflow-y: auto;
+  font-family: Poppins;
   position: fixed;
   top: 0;
-  transition: 0.6s ease;
+  left: -100%;
+  overflow-y: auto;
   transition-property: left;
-  width: 300px;
+  transition: 0.6s ease;
 }
 
 .side-bar.active {
@@ -153,30 +163,51 @@ h2 {
 }
 
 .side-bar .menu {
-  margin-top: 80px;
   width: 100%;
+  margin-top: 80px;
 }
 
 .side-bar .menu .item {
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
+}
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
 }
 
 .item {
   color: white;
 }
 
-.item a {
-  color: white;
-  display: block;
-  font-size: var(--font-medium);
-  line-height: 60px;
-  padding: 5px 30px;
-  text-decoration: none;
-}
-
 .item a:hover {
   background-color: #a6c3ff;
+}
+
+.intro {
+  margin-left: 20px;
+  color: white;
+}
+
+.item i {
+  margin-right: 15px;
+}
+
+.item a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3 ease;
 }
 
 .item .sub-menu a {
@@ -188,32 +219,57 @@ h2 {
   background-color: #a6c3ff;
 }
 
+.item .sub-menu {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
 .close-btn {
-  color: white;
-  cursor: pointer;
-  font-size: var(--font-large);
-  margin: 25px;
   position: absolute;
+  color: white;
+  font-size: 20px;
   right: 0;
+  margin: 25px;
+  cursor: pointer;
 }
 
 .navbar {
-  align-items: center;
-  background-color: #f4f2f2;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  color: black;
   display: flex;
-  height: 60px;
   justify-content: space-between;
+  align-items: center;
+  /* line-height: 43.72px;  */
   text-align: left;
   width: 100%;
+  height: 60px;
+  left: 629px;
+  opacity: 1;
+  color: black;
+  background-color: #f4f2f2;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav-logo {
   font-family: "Ribeye", cursive;
-  font-size: var(--font-extra-large);
+  font-size: 32px;
   font-weight: 400;
   text-transform: uppercase;
+  /* margin-left: 800px; */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: 740px;
+  gap: 10px;
+}
+
+.nav-logo img {
+  padding-left: 100px;
 }
 
 .right-section {
@@ -223,61 +279,105 @@ h2 {
   margin-right: 30px;
 }
 
-.sign-in button,
-.shop button {
-  background-color: #073082;
-  border: none;
-  border-radius: 15px;
+.sign-in a {
+  text-decoration: none;
   color: white;
-  cursor: pointer;
-  font-family: "Poppins";
-  font-size: var(--font-medium);
-  padding: 10px 20px;
+  padding: 10px;
 }
 
-.sign-in button:hover,
+.sign-in i {
+  margin-right: 10px;
+  font-size: 17px;
+  padding-top: 5px;
+}
+
+.shop i {
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
+
+.sign-in button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Poppins;
+  background-color: #073082;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.shop button {
+  padding: 10px 20px;
+  background-color: #073082;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.sign-in button:hover {
+  background-color: #0056b3;
+}
+
 .shop button:hover {
   background-color: #0056b3;
 }
 
-.search-bar {
-  align-items: center;
+.menu-btn {
   display: flex;
-  justify-content: center;
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.menu-btn .background {
+  background-color: #073082;
+  padding: 18px;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
   margin-top: 30px;
+  justify-content: center;
+}
+
+.search-bar i {
+  font-size: 16px;
 }
 
 .search-bar input {
+  width: 900px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 25px 0 0 25px;
-  font-size: var(--font-medium);
+  font-size: 16px;
   height: 40px;
-  padding: 10px;
-  width: 900px;
+}
+ 
+.input focus {
+  border-color: #002366;
+  outline: none;
 }
 
 .search-bar .search-btn {
-  align-items: center;
   background-color: white;
   border: 1px solid #ccc;
   border-left: none;
+  padding: 10px;
   border-radius: 0 25px 25px 0;
   cursor: pointer;
-  display: flex;
-  height: 40px;
+  align-items: center;
   justify-content: center;
-  padding: 10px;
+  height: 40px;
 }
 
 .search-bar .search-btn:hover {
   background-color: #0056b3;
   color: white;
-}
-
-/* Reusable Font Sizes */
-:root {
-  --font-small: 14px;
-  --font-medium: 18px;
-  --font-large: 24px;
-  --font-extra-large: 32px;
 }
