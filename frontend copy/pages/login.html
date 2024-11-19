@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <title>Biblioteca Virtual</title>
+</head>
+<body>
+    <video autoplay loop muted id="videoAbstract">
+        <source src="..//static/Abstract_Blue.mp4" type="video/mp4">
+    </video>
+    <form action="">
+        <div class="retorno">
+        <button class="btn-back" onclick="window.history.back();"><img class="back" src="../static/arrow-left-short.svg" alt="retornar"></button>
+        <h1>Login</h1>
+        </div>
+        <div class="coluna">
+            <input type="email" placeholder="E-mail" required>
+            <span>@gmail.com</span>
+        </div>
+        <div class="coluna">
+            <input class="senha" type="password" placeholder="Senha" required>
+            <img class="btn" src="../static/eye-fill.svg" alt="">
+        </div>
+        <div class="button">
+        <input onclick="logado()" type="button" value="Entrar">
+        </div>
+        <div class="esqueceu">
+            <a href="esqueceuSenha.html" class="esqueceu-senha">Esqueceu a senha?</a>
+        </div>
+        <div class="esqueceu">
+            <p class="esqueceu-senha2">Já tem cadastro? 
+                <a href="cadastro.html" class="esqueceu-senha3">Cadastre-se</a>
+            </p>
+        </div>
+    </form>
+
+    <script>
+        const senha = document.querySelector('.senha');
+        const btn = document.querySelector('.btn');
+
+        btn.onclick = () =>
+        {
+            if (senha.type === "password") 
+            {
+                senha.type = "text"
+                btn.src = "../static/eye-fill.svg"
+            } else {
+                senha.type = "password"
+                btn.src = "../static/eye-slash-fill.svg"
+            }
+        }
+
+        function logado() {
+            alert("Usuário logado com sucesso!");
+        }
+
+    </script>
+    
+</body>
+</html>
