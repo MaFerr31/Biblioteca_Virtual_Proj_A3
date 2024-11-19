@@ -24,11 +24,9 @@ header {
 }
 
 .content {
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Remove duplicate margin-bottom */
   display: flex;
-  margin-bottom: 20px;
   width: 100%;
-
 }
 
 .subtitle {
@@ -40,8 +38,7 @@ header {
 
 h2 {
   font-size: 25px;
-  text-align: 50px;
-  padding-left: 10px;
+  padding-left: 10px; /* Removed invalid "text-align: 50px;" */
   font-family: "Poppins", sans-serif;
 }
 
@@ -70,7 +67,7 @@ h2 {
 }
 
 .product-info {
-  min-height: auto; /* Ajuste conforme necessário */
+  min-height: auto; /* Adjust based on layout needs */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,27 +82,16 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
-.product-info p:nth-child(2) {
-  font-size: 14px;
-  color: #666;
-  height: 20px; /* Altura fixa para alinhar o tipo do produto (ex: Blu-ray) */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
+.product-info p:nth-child(2),
 .product-info p:nth-child(3) {
   font-size: 14px;
   color: #666;
-  height: 30px; /* Altura fixa para alinhar o preço */
+  height: 20px; /* Same height for alignment */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .product button {
@@ -130,32 +116,31 @@ h2 {
 
 #no_results {
   display: none; 
-  position: absolute; /* Posicionamento absoluto para centralização */
-  top: 60%; /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translate(-50%, -50%); /* Ajuste para o centro exato */
-  font-size: 18px; /* Ajuste o tamanho do texto, se necessário */
-  color: #666; /* Cor do texto */
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #666;
 }
 
-/*mari*/
 body {
   margin: 0;
   min-height: 100vh;
   background-color: whitesmoke;
+  font-family: "Poppins", sans-serif; /* Added fallback font */
 }
 
 .side-bar {
   background: #073082;
   width: 300px;
   height: 100vh;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   position: fixed;
   top: 0;
   left: -100%;
   overflow-y: auto;
-  transition-property: left;
-  transition: 0.6s ease;
+  transition: left 0.6s ease; /* Combined shorthand */
 }
 
 .side-bar.active {
@@ -170,24 +155,11 @@ body {
 .side-bar .menu .item {
   position: relative;
   cursor: pointer;
-}
-
-.side-bar .menu .item {
-  position: relative;
-  cursor: pointer;
-}
-
-.item {
   color: white;
 }
 
 .item a:hover {
   background-color: #a6c3ff;
-}
-
-.intro {
-  margin-left: 20px;
-  color: white;
 }
 
 .item i {
@@ -207,7 +179,7 @@ body {
   position: absolute;
   right: 0;
   margin: 20px;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .item .sub-menu a {
@@ -240,11 +212,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* line-height: 43.72px;  */
-  text-align: left;
   width: 100%;
   height: 60px;
-  left: 629px;
   opacity: 1;
   color: black;
   background-color: #f4f2f2;
@@ -256,7 +225,6 @@ body {
   font-size: 32px;
   font-weight: 400;
   text-transform: uppercase;
-  /* margin-left: 800px; */
 }
 
 .title {
@@ -285,31 +253,11 @@ body {
   padding: 10px;
 }
 
-.sign-in i {
-  margin-right: 10px;
-  font-size: 17px;
-  padding-top: 5px;
-}
-
-.shop i {
-  font-size: 15px;
-  padding-top: 8px;
-  padding-bottom: 2px;
-}
-
-.sign-in button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: Poppins;
-  background-color: #073082;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
+.sign-in button,
 .shop button {
   padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
   background-color: #073082;
   color: white;
   border: none;
@@ -317,10 +265,7 @@ body {
   cursor: pointer;
 }
 
-.sign-in button:hover {
-  background-color: #0056b3;
-}
-
+.sign-in button:hover,
 .shop button:hover {
   background-color: #0056b3;
 }
@@ -331,13 +276,11 @@ body {
   color: white;
   font-size: 22px;
   cursor: pointer;
-  margin-right: auto;
 }
 
 .menu-btn .background {
   background-color: #073082;
   padding: 18px;
-  margin: 0;
 }
 
 .search-bar {
@@ -359,11 +302,6 @@ body {
   font-size: 16px;
   height: 40px;
 }
- 
-.input focus {
-  border-color: #002366;
-  outline: none;
-}
 
 .search-bar .search-btn {
   background-color: white;
@@ -372,8 +310,6 @@ body {
   padding: 10px;
   border-radius: 0 25px 25px 0;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
   height: 40px;
 }
 
