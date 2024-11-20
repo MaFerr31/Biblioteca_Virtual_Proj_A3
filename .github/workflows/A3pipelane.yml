@@ -34,5 +34,8 @@ jobs:
             csslint ./frontend/styles/esqueceu.css
             csslint ./frontend/styles/login.css
             csslint ./frontend/styles/discos.css
+            csslint ./frontend/styles/filmes.css
+            csslint ./frontend/styles/livros.css
+
 
             
