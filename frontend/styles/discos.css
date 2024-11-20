@@ -25,7 +25,7 @@
 }
 
 header {
-  max-width: 80%;
+  max-width: 68%;
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -57,21 +57,17 @@ h2 {
   font-weight: 400;
 }
 
-.i{
+#i{
   font-size: 32px;
 }
 
 .products {
-  display: grid;
-  flex-wrap: nowrap;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
   gap: 30px;
   padding: 20px;
 }
-
 .product {
   display: flex;
   flex-direction: column;
