@@ -36,6 +36,14 @@ jobs:
             csslint ./frontend/styles/discos.css
             csslint ./frontend/styles/filmes.css
             csslint ./frontend/styles/livros.css
+            csslint ./frontend/styles/payment.css
+            csslint ./frontend/styles/manageReturns.css
+            csslint ./frontend/styles/sideBar.css
+            csslint ./frontend/styles/priceCards.css
+            csslint ./frontend/styles/global.css
+            
+
+            
 
 
             
