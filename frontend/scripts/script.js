@@ -1,29 +1,14 @@
-<<<<<<< HEAD
-$(document).ready(function(){
-    $('.sub-button').click(function(){
-=======
 $(document).ready(function () {
     $('.sub-button').click(function () {
->>>>>>> main
         $(this).next('.sub-menu').slideToggle();
         $(this).find('.dropdown').toggleClass('rotate');
     });
 
-<<<<<<< HEAD
-    $('.menu-btn').click(function(){
-=======
     $('.menu-btn').click(function () {
->>>>>>> main
         $('.side-bar').addClass('active');
         $('.menu-btn').css("visibility", "hidden");
     });
 
-<<<<<<< HEAD
-    $('.close-btn').click(function(){
-        $('.side-bar').removeClass('active');
-        $('.menu-btn').css("visibility", "visible");
-    });
-=======
     $('.close-btn').click(function () {
         $('.side-bar').removeClass('active');
         $('.menu-btn').css("visibility", "visible");
@@ -56,5 +41,4 @@ $(document).ready(function () {
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "");
     }
->>>>>>> main
 });
