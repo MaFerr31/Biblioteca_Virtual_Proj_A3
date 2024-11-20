@@ -158,13 +158,5 @@ h2 {
   margin-left: 5px;
 }
 
-#no_results {
-  display: none; 
-  position: absolute; 
-  top: 60%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  font-size: 18px; 
-  color: #666; 
-}
+
 
