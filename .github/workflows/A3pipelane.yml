@@ -30,6 +30,10 @@ jobs:
 
       - name: List CSS
         run: |
-            csslint ./frontend/styles/cadastro.css
-            csslint ./frontend/styles/esqueceu.css
-            csslint ./frontend/styles/filmes.css
+            csslint ./frontend/styles/*
+            
+
+            
+
+
+            

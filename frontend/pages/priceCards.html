@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/filmes.css">
-    <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/sideBar.css">
+    <link rel="stylesheet" href="../styles/priceCards.css">
+    <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="../scripts/script.js"></script>
     <title>Biblioteca Virtual</title>
 </head>
 <body>
@@ -67,79 +69,44 @@
             </div>
         </div>
     </div>
-        <div class="banner">
-            <img src="../static/img/banner.jpg" alt="Filmes/Video K7">
+      
+    <h1 class="main__title">Escolha seu Plano</h1>
+
+    <section class="sessão__price">
+        <div class="main__box">
+            <h2 class="pricing__title">Basic</h2>
+            <p> <span class="numero__price">R$ 5.95</span> / mês</p>
+            <ul class="class-plan__features">
+                <li>5 Alugueis Gratuitos.</li>
+                <li>Preços mais acessíveis.</li>
+                <li>Tempo do aluguel extendido para 2 semanas.</li>
+            </ul>
+            <a href="#" class="pricing-plan__button">Assine já</a>
         </div>
-        <div class="subtitle"><i id="i" class="fa-solid fa-film"></i><h2>Categoria: Sessão Filmes</h2></div>
-        <header>
-        
-        <div class="content">
-            <div class="products">
-                <div class="product">
-                    <a href="#">
-                    <img src="../static/img/twisters cartaz.jpg" alt="Twister">
-                    <div class = "product-info">
-                    <h3>Twister - Dublado </h3>
-                    <p>Blu-ray</p>
-                    <span>R$18,77</span>
-                </div>
-                    <button>ALUGAR <i class="fa fa-plus-circle"></i></button>
-                </a>
-                </div>
-        
-                <div class="product">
-                    <a href="#">
-                    <img src="../static/img/top-gun.png" alt="Top Gun Maverick">
-                    <div class = "product-info">
-                    <h3>Top Gun Maverick - Dublado</h3>
-                    <p>Blu-ray</p>
-                    <span>R$15,34</span>
-                    </div>
-                    <button>ALUGAR <i class="fa fa-plus-circle"></i></button>
-                    </a>
-                </div>
-        
-                <div class="product">
-                    <a href="#">
-                        <img src="../static/img/panico 2.jpg" alt="Pânico 2">
-                        <div class = "product-info">
-                            <h3>Pânico 2 - Dublado</h3>
-                            <p>Blu-ray</p>
-                            <span>R$12,31</span>
-                            </div>
-                         <button>ALUGAR <i class="fa fa-plus-circle"></i></button>
-                     </a>
-                </div>
-        
-                <div class="product">
-                <a href="#">
-                    <img src="../static/img/terror na ilha.jpg" alt="Terror na Ilha">
-                    <div class = "product-info">
-                        <h3>Terror na Ilha - Dublado</h3>
-                         <p>Blu-ray</p>
-                         <span>R$7,96</span>
-                    </div>
-                    <button>ALUGAR <i class="fa fa-plus-circle"></i></button>
-                </a>
-                </div>
-        
-                <div class="product"><a href="#">
-                    <img src="../static/img/interestelar.jpg" alt="Interestellar">
-                    <div class = "product-info">
-                    <h3>Interestellar - Dublado</h3>
-                    <p>Blu-ray</p>
-                    <span>R$9,99</span>
-                    </div>
-                    <button>ALUGAR <i class="fa fa-plus-circle"></i></button>
-                    </a>
-                </div>
-              </div>
-            <div id="no_results">
-                    <p>Nenhum resultado encontrado</p>
-            </div>
+
+        <div class="main__box">
+            <h2 class="pricing__title">Premium</h2>
+            <p> <span class="numero__price">R$ 10.95</span> / mês</p>
+            <ul class="class-plan__features">
+                <li>7 Alugueis Gratuito.</li>
+                <li>Preços mais acessíveis.</li>
+                <li>Tempo do aluguel extendido para 2 semanas.</li>
+                <li>Brindes no primeiro aluguel do mês.</li>
+            </ul>
+            <a href="#" class="pricing-plan__button">Assine já</a>
         </div>
-    </header>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
-    <script src="../scripts/script.js"></script>
+
+        <div class="main__box">
+            <h2 class="pricing__title">Black</h2>
+            <p> <span class="numero__price">R$ 14.95</span> / mês</p>
+            <ul class="class-plan__features">
+                <li>10 Alugueis Gratuitos.</li>
+                <li>Tempo do aluguel extendido para 1 mês.</li>
+                <li>Brindes no primeiro aluguel do mês.</li>
+                <li>Acessórios personalizados.</li>
+            </ul>
+            <a href="#" class="pricing-plan__button">Assine já</a>
+        </div>
+    </section>
 </body>
 </html>
