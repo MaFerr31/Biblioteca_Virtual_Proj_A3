@@ -127,6 +127,7 @@ body{
     justify-content: center;
     align-items: center;
     margin:auto;
+    margin-left: 1000px;
     gap: 10px
 }
 

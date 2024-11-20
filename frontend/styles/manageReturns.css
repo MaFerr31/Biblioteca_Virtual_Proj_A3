@@ -13,16 +13,24 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.header {
-    font-family: Poppins;
-    font-size: 28px;
+.gestao {
+    display: flex;
     padding: 20px;
+    align-items: center;
+    border-top:#01172e solid 7px;
+    border-bottom:#7cb2ec solid 7px;
+    margin-top: 30px;
     background-color: #073082;
-    color: #ffffff;
-    margin-top: 50px;
-    text-align: left;
-    font-size: 1.5em;
+    color: white
 }
+
+h2{
+  padding-left: 15px;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
