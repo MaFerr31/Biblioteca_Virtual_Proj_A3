@@ -10,9 +10,11 @@ section {
 
 .payment{
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 21px;
     padding: 20px;
     margin-top: 50px;
+    border-top:#01172e solid 7px;
+    border-bottom:#7cb2ec solid 7px;
     background-color: #073082;
     color: white
 }
