@@ -17,7 +17,8 @@
 }
 
 header {
-  max-width: 80%;
+  max-width: 100%;
+  align-items: center;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -57,6 +58,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
   gap: 30px;
   padding: 20px;
 }
