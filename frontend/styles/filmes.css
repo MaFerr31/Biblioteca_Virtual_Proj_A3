@@ -17,7 +17,7 @@
 }
 
 header {
-  max-width: 73%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -59,6 +59,7 @@ h2 {
   justify-content: center;
   gap: 30px;
   padding: 20px;
+  margin: auto;
 }
 
 .product {
